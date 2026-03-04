@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f3f1; /* tom neutro claro */
+    color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1f2a37; /* azul marinho suave */
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #6b6b6b;
+    margin-bottom: 3rem;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: #ffffff;
+    padding: 1.8rem;
+    text-decoration: none;
+    color: #3e3e3e;
+    font-weight: 500;
+    border-radius: 12px;
+    border: 1px solid #e5e2df;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-4px);
+    background: #1f2a37; /* azul marinho */
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 500px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+}
