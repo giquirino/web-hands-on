@@ -4,73 +4,119 @@
     box-sizing: border-box;
 }
 
-
 body {
-    font-family: 'Inter', sans-serif;
-    background: #f5f3f1; 
-    color: #2e2e2e;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 2rem;
+    overflow: hidden; 
 }
-
 
 .container {
-    width: 100%;
-    max-width: 900px;
-    text-align: center;
+    background-color: transparent;
+    width: 98%;
+    max-width: 1400px;
+    padding: 10px;
+    box-shadow: none;
 }
 
+.header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 70px;
+    margin-bottom: 5px;
+}
 
 .header h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #1f2a37; /* azul marinho suave */
-    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    color: #333;
 }
 
 .subtitle {
-    font-size: 1rem;
-    font-weight: 300;
-    color: #6b6b6b;
-    margin-bottom: 3rem;
+    color: #888;
+    font-size: 0.85rem;
 }
 
-
-.cards {
+.cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 15px;
 }
 
 .card {
-    background: #ffffff;
-    padding: 1.8rem;
     text-decoration: none;
-    color: #3e3e3e;
-    font-weight: 500;
-    border-radius: 12px;
-    border: 1px solid #e5e2df;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
+    height: 350px; 
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
+.card-img {
+    width: 100%;
+    max-width: 180px;
+    height: 180px;
+    border-radius: 0;
+    border: none;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
 
 .card:hover {
-    transform: translateY(-4px);
-    background: #1f2a37; /* azul marinho */
-    color: #ffffff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
 }
 
-@media (max-width: 500px) {
-    .header h1 {
-        font-size: 2rem;
-    }
+.card-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .subtitle {
-        font-size: 0.9rem;
-    }
+.card-content h3 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 2px;
+}
+
+.card-content span {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.8rem;
+}
+
+/* Yasmin - Nojinho */
+.green { background: linear-gradient(180deg, #81c784, #388e3c); box-shadow: 0 10px 20px rgba(56, 142, 60, 0.3); }
+
+/* Giovanna - Ansiedade */
+.orange { background: linear-gradient(180deg, #ffb74d, #f57c00); box-shadow: 0 10px 20px rgba(245, 124, 0, 0.3); }
+
+/* Orestes - Preguiça */
+.lazy-purple { background: linear-gradient(180deg, #9575cd, #512da8); box-shadow: 0 10px 20px rgba(81, 45, 168, 0.3); }
+
+/* Rafael - Alegria */
+.yellow { background: linear-gradient(180deg, #fff176, #fbc02d); box-shadow: 0 10px 20px rgba(251, 192, 45, 0.3); }
+
+/* Enzo - Raiva */
+.red { background: linear-gradient(180deg, #e57373, #d32f2f); box-shadow: 0 10px 20px rgba(211, 47, 47, 0.3); }
+
+/* Botana - Medo */
+.purple { background: linear-gradient(180deg, #ba68c8, #7b1fa2); box-shadow: 0 10px 20px rgba(123, 31, 162, 0.3); }
+@media (max-width: 1000px) {
+    .cards-grid { grid-template-columns: repeat(3, 1fr); }
+    .card { height: 300px; }
+    body { overflow: auto; }
+}
+
+@media (max-width: 600px) {
+    .cards-grid { grid-template-columns: repeat(2, 1fr); }
 }
