@@ -51,7 +51,7 @@
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .menu ul {
         gap: 15px;
         font-size: 0.85rem;
@@ -65,18 +65,18 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden; 
+    overflow: hidden;
     margin: 0;
     overflow-y: auto;
 }
 
 .container {
     width: 100%;
-    max-width: 1400px;
-    padding: 20px;
+    max-width: 1600px;
+    padding: 20px 50px;
     display: flex;
     flex-direction: column;
-    position: relative;
+    gap: 40px;
 }
 
 .header {
@@ -98,7 +98,7 @@ body {
 .logo {
     position: absolute;
     top: 50px;
-    left: 40px;
+    left: 100px;
     width: 140px;
     z-index: 10;
     transition: transform 0.3s ease;
@@ -106,7 +106,7 @@ body {
 
 .header h1 {
     font-size: 1.9rem;
-    color: #333;
+    color: #388e3c;
 }
 
 .subtitle {
@@ -132,9 +132,9 @@ body {
     justify-content: center;
 }
 
-.green { 
-    background: linear-gradient(180deg, #81c784, #388e3c); 
-    box-shadow: 0 10px 20px rgba(56, 142, 60, 0.2); 
+.green {
+    background: linear-gradient(180deg, #81c784, #388e3c);
+    box-shadow: 0 10px 20px rgba(56, 142, 60, 0.2);
 }
 
 .card:hover {
@@ -152,7 +152,7 @@ body {
     object-fit: cover;
     border-radius: 15px;
     margin-bottom: 10px;
-    border: 2px solid rgba(255,255,255,0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .card-content h3 {
@@ -174,23 +174,24 @@ body {
     font-size: 0.85rem;
 }
 
-#sobre\ mim, #lugar {
-    width: 100%;
-    max-width: 1000px;
-    margin: right: auto;
+#sobre\ mim,
+#lugar {
+    background-color: #ffffff;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.5);
     border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-#sobre\ mim h2, #lugar h2 {
+#sobre\ mim h2,
+#lugar h2 {
     font-size: 1.4rem;
     margin-bottom: 15px;
     position: relative;
     display: inline-block;
 }
 
-#sobre\ mim h2::after, #lugar h2::after {
+#sobre\ mim h2::after,
+#lugar h2::after {
     content: '';
     display: block;
     width: 50px;
@@ -200,7 +201,8 @@ body {
     margin-top: 15px;
 }
 
-#sobre\ mim p, #lugar p {
+#sobre\ mim p,
+#lugar p {
     font-size: 1.1rem;
     line-height: 1.7;
     color: #444;

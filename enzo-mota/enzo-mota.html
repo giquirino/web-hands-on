@@ -3,31 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Lugar que quero conhecer</title>
+    <title>Lugares que quero conhecer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="enzo-mota.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Lugar que tenho vontade de conhecer</h1>
-        <p>Preencha as informações sobre um lugar do mundo que você gostaria de visitar.</p>
-    </header>
+    <main class="container">
+        <header class="header">
+            <div class="header-top">
+                <img src="img/raiva.png" alt="Raiva Logo" class="logo">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="/index.html">Início</a></li>
+                        <li><a href="#">Sobre o Projeto</a></li>
+                        <li><a href="#">DevOps</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>Enzo D´Angio Mota</h1>
+            <p class="subtitle">Turma: 2ºF</p>
+        </header>
 
-    <main>
-        <section id="aluno">
-            <h2>Sobre o aluno</h2>
-            <p>Nome: <strong>Enzo D´Angio Mota</strong></p>
-            <p>Turma: 2ºF</p>
+        <section id="sobre mim">
+            <h2>Sobre mim</h2>
+            <p>Sou apaixonado por conhecer novas culturas, pessoas e lugares incríveis ao redor do mundo.</p>
         </section>
 
         <section id="lugar">
-            <h2>O lugares dos meus sonhos</h2>
-            <p><strong>Nomes dos lugares:</strong> </p>
+            <h2>Os lugares dos meus sonhos</h2>
+            <p><strong>Nome dos lugares: </strong></p>
+            <p>Tenho muita vontade de conhecer os Estados Unidos, a Itália e a Grécia por tudo o que cada um representa
+                em cultura, história e inovação.</p>
             <p><strong>Por que quero conhecer esses lugares?</strong></p>
             <p>
-                Tenho muita vontade de conhecer os Estados Unidos, a Itália e a Grécia por tudo o que cada um representa
-                em cultura, história e inovação.
                 Nos Estados Unidos, me atrai a modernidade e a força da tecnologia;
                 na Itália, a arquitetura, a arte e a culinária marcante;
                 e na Grécia, as paisagens paradisíacas e a riqueza histórica.
@@ -37,17 +49,37 @@
         </section>
 
         <section id="curiosidades">
-            <h2>Curiosidades sobre esses lugares</h2>
-            <ul>
-                <li>É sede de algumas das maiores empresas de tecnologia do planeta.</li>
-                <li>Dentro de Roma existe um país independente: o Vaticano.</li>
-                <li>Possui mais de 6 mil ilhas, mas apenas cerca de 200 são habitadas.</li>
-            </ul>
+            <div class="cards-grid">
+                <div class="card red">
+                    <div class="card-content">
+                        <img src="img/nova-york.jpg" alt="Estados Unidos" class="card-img">
+                        <h3>Estados Unidos</h3>
+                        <p>É sede de algumas das maiores empresas de tecnologia do planeta.</p>
+                    </div>
+                </div>
+
+                <div class="card red">
+                    <div class="card-content">
+                        <img src="img/vatican.jpg" alt="Vaticano" class="card-img">
+                        <h3>Vaticano</h3>
+                        <p>Dentro de Roma existe um país independente: o Vaticano.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card red">
+                    <div class="card-content">
+                        <img src="img/grecia.jpg" alt="Grécia" class="card-img">
+                        <h3>Grécia</h3>
+                        <p>Possui mais de 6 mil ilhas, mas apenas cerca de 200 são habitadas.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>Trabalho de HTML/CSS - Lugares que quero conhecer</p>
+    <footer class="footer">
+        <p>&copy; 2025 Projeto DevOps - Divertidamente</p>
     </footer>
 
 </body>
