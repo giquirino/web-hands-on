@@ -76,6 +76,7 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .header {
@@ -85,9 +86,22 @@ body {
     padding-top: 20px;
 }
 
+
+.header-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    min-height: 80px;
+}
+
 .logo {
-    width: 120px;
-    margin-bottom: 2px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 140px;
+    z-index: 10;
+    transition: transform 0.3s ease;
 }
 
 .header h1 {
@@ -96,6 +110,7 @@ body {
 }
 
 .subtitle {
+    margin-bottom: 20px;
     color: #888;
     font-size: rem;
 }
@@ -170,7 +185,7 @@ body {
 
 #sobre\ mim h2, #lugar h2 {
     font-size: 1.4rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     position: relative;
     display: inline-block;
 }
@@ -182,7 +197,7 @@ body {
     height: 4px;
     background: #81c784;
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 #sobre\ mim p, #lugar p {
