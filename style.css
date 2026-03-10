@@ -4,42 +4,100 @@
     box-sizing: border-box;
 }
 
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.menu ul li a:hover {
+    color: #7b1fa2;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #7b1fa2;
+    transition: width 0.3s ease;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .header-top {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .menu ul {
+        gap: 15px;
+        font-size: 0.85rem;
+    }
+}
+
 body {
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
     overflow: hidden; 
+    margin: 0;
+    overflow-y: auto;
 }
 
 .container {
-    background-color: transparent;
-    width: 98%;
+    width: 100%;
     max-width: 1400px;
-    padding: 10px;
-    box-shadow: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
+    width: 100%;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
+    padding-top: 20px;
 }
 
 .logo {
-    width: 70px;
-    margin-bottom: 5px;
+    width: 120px;
+    margin-bottom: 2px;
 }
 
 .header h1 {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     color: #333;
 }
 
 .subtitle {
     color: #888;
-    font-size: 0.85rem;
+    font-size: 1rem;
 }
 
 .cards-grid {
@@ -60,16 +118,17 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
+    margin-top: 0;
 }
 
 .card-img {
     width: 100%;
-    max-width: 180px;
-    height: 180px;
+    max-width: 200px;
+    height: 220px;
     border-radius: 0;
     border: none;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .card:hover {
@@ -91,7 +150,7 @@ body {
 
 .card-content span {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 /* Yasmin - Nojinho */
@@ -111,6 +170,7 @@ body {
 
 /* Botana - Medo */
 .purple { background: linear-gradient(180deg, #ba68c8, #7b1fa2); box-shadow: 0 10px 20px rgba(123, 31, 162, 0.3); }
+
 @media (max-width: 1000px) {
     .cards-grid { grid-template-columns: repeat(3, 1fr); }
     .card { height: 300px; }
@@ -119,4 +179,13 @@ body {
 
 @media (max-width: 600px) {
     .cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.footer {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: #999;
+    font-size: 0.85rem;
 }

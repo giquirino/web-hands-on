@@ -1,54 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Lugar que quero conhecer</title>
-        <link rel="stylesheet" href="matheus-orestes.css">
-    </head>
-    <body>
 
-        <header>
-            <h1>Lugar que tenho vontade de conhecer</h1>
-            <p>Gosto muito de conhecer novos lugares e culturas</p>
+<head>
+    <meta charset="UTF-8">
+    <title>Lugares que quero conhecer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="matheus-orestes.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <img src="img/tedio.png" alt="Tédio Logo" class="logo">
+        <header class="header">
+            <div class="header-top">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="/index.html">Início</a></li>
+                        <li><a href="#">Sobre o Projeto</a></li>
+                        <li><a href="#">DevOps</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>Matheus Orestes</h1>
+            <p class="subtitle">Turma: 2ºF</p>
         </header>
 
-        <main>
-            <section id="aluno">
-                <h2>Sobre mim</h2>
-                <p>Nome: <strong>Matheus Orestes</strong></p>
-                <p>Turma: 2ºF</p>
-            </section>
+        <section id="sobre mim">
+            <h2>Sobre mim</h2>
+            <p>Gosto de explorar o mundo, conhecer novas culturas, pessoas e lugares incríveis.</p>
+        </section>
 
-            <section id="lugar">
-                <h2>O lugar dos meus sonhos</h2>
-                <p><strong>Nome do lugar:</strong>Alpes Suíços, Londres e
-                    Roma</p>
-                <p><strong>Por que quero conhecer esse lugar?</strong></p>
-                <p>
-                    Para mim gostaria de visitar esse lugares sendo os Alpes
-                    Suíços pela paz e as
-                    paisagens de cinema, Londres pelo mix fascinante de história
-                    e modernidade, e Roma pelo privilégio de caminhar entre
-                    ruínas milenares e comer muito bem. É o roteiro perfeito
-                    para unir natureza, cultura e história em uma tacada só.
-                </p>
-            </section>
+        <section id="lugar">
+            <h2>Os lugares dos meus sonhos</h2>
+            <p><strong>Nome dos lugares: </strong></p>
+            <p>Alpes Suíços, Londres e Roma.</p>
+            <p><strong>Por que quero conhecer esses lugares?</strong></p>
+            <p>
+                Para mim gostaria de visitar esse lugares sendo os Alpes
+                Suíços pela paz e as
+                paisagens de cinema, Londres pelo mix fascinante de história
+                e modernidade, e Roma pelo privilégio de caminhar entre
+                ruínas milenares e comer muito bem. É o roteiro perfeito
+                para unir natureza, cultura e história em uma tacada só.
+            </p>
+        </section>
 
-            <section id="curiosidades">
-                <h2>Curiosidades sobre esse lugar</h2>
-                <ul>
-                    <li><strong>Alpes Suíços:</strong> São famosos por suas
-                        paisagens montanhosas deslumbrantes.</li>
-                    <li><strong>Londres:</strong> É uma metrópole vibrante que tem diversos anos de história.</li>
-                    <li><strong>Roma:</strong> Considerada um museu a céu
-                        aberto.</li>
-                </ul>
-            </section>
-        </main>
+        <section id="curiosidades">
+            <div class="cards-grid">
+                <div class="card lazy-purple">
+                    <div class="card-content">
+                        <img src="img/alpes-suicos.jpg" alt="Alpes Suíços" class="card-img">
+                        <h3>Alpes Suíços</h3>
+                        <p>São famosos por suas paisagens montanhosas deslumbrantes.</p>
+                    </div>
+                </div>
 
-        <footer>
-            <p>Trabalho de HTML/CSS - Lugares que quero conhecer</p>
-        </footer>
+                <div class="card lazy-purple">
+                    <div class="card-content">
+                        <img src="img/londres-nuit.jpg" alt="Londres" class="card-img">
+                        <h3>Londres</h3>
+                        <p>É uma metrópole vibrante que tem diversos anos de história.</p>
+                    </div>
+                </div>
 
-    </body>
+                <div class="card lazy-purple">
+                    <div class="card-content">
+                        <img src="img/colosseo.jpg" alt="Colosseo" class="card-img">
+                        <h3>Roma</h3>
+                        <p>Considerada um museu a céu aberto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Projeto DevOps - Divertidamente</p>
+    </footer>
+
+</body>
+
 </html>

@@ -1,48 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <title>Lugar que quero conhecer</title>
+    <title>Lugares que quero conhecer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="rafael-lopes.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Lugar que tenho vontade de conhecer</h1>
-    <p>Preencha as informações sobre um lugar do mundo que você gostaria de visitar.</p>
-</header>
+    <main class="container">
+        <header class="header">
+            <div class="header-top">
+                <img src="img/alegria.png" alt="Alegria Logo" class="logo">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="/index.html">Início</a></li>
+                        <li><a href="#">Sobre o Projeto</a></li>
+                        <li><a href="#">DevOps</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>Rafael Lopes</h1>
+            <p class="subtitle">Turma: 2ºF</p>
+        </header>
 
-<main>
-    <section id="aluno">
-        <h2>Sou apaixonado por música, escuto MPB, reggae, rap, samba e pagode.<br>
-            Moro na Zona Norte de São Paulo, jogo tênis de mesa, faço academia e<br>
-            sou palmeirense.</h2>
-        <p>Nome: <strong>Rafael Lopes</strong></p>
-        <p>Turma: 2ºF</p>
-    </section>
+        <section id="sobre mim">
+            <h2>Sobre mim</h2>
+            <p>Sou apaixonado por música, escuto MPB, reggae, rap, samba e pagode.<br>
+                Moro na Zona Norte de São Paulo, jogo tênis de mesa, faço academia e<br>
+                sou palmeirense.</p>
+        </section>
 
-    <section id="lugar">
-        <h2>O lugar dos meus sonhos</h2>
-        <p><strong>Nome do lugar:</strong> Barcelona, Espanha</p>
-        <p><strong>Por que quero conhecer esse lugar?</strong></p>
-        <p>
-            Quero conhecer Barcelona porque sou fã do time Barcelona e gostaria muito de ver um jogo do time lá no estádio. Também tenho vontade de visitar a Sagrada Família, que é uma igreja muito famosa e bonita da cidade.
-        </p>
-    </section>
+        <section id="lugar">
+            <h2>O lugar dos meus sonhos</h2>
+            <p><strong>Nome do lugar: </strong></p>
+            <p>Barcelona, Espanha.</p>
+            <p><strong>Por que quero conhecer esse lugar?</strong></p>
+            <p>
+                Quero conhecer Barcelona porque sou fã do time Barcelona e gostaria muito de ver um jogo do time
+                lá no
+                estádio. Também tenho vontade de visitar a Sagrada Família, que é uma igreja muito famosa e
+                bonita da
+                cidade.
+            </p>
+        </section>
 
-    <section id="curiosidades">
-        <h2>Curiosidades sobre esse lugar</h2>
-        <ul>
-            <li>Barcelona tem uma das maiores torcidas do mundo</li>
-            <li>A igreja Sagrada Família ainda não está pronta </li>
-            <li>A cidade tem mais de 4 km de praias</li>
-        </ul>
-    </section>
-</main>
+        <section id="curiosidades">
+            <div class="cards-grid">
+                <div class="card yellow">
+                    <div class="card-content">
+                        <img src="img/camp-nou.jpg" alt="Camp Nou" class="card-img">
+                        <h3>Camp Nou</h3>
+                        <p>Barcelona tem uma das maiores torcidas do mundo.</p>
+                    </div>
+                </div>
 
-<footer>
-    <p>Trabalho de HTML/CSS - Lugares que queremos conhecer</p>
-</footer>
+                <div class="card yellow">
+                    <div class="card-content">
+                        <img src="img/sagrada-familia-barcelona.png" alt="Sagrada Família" class="card-img">
+                        <h3>Sagrada Família</h3>
+                        <p>A igreja Sagrada Família ainda não está pronta.</p>
+                    </div>
+                </div>
+
+                <div class="card yellow">
+                    <div class="card-content">
+                        <img src="img/praias.jpg" alt="Praias" class="card-img">
+                        <h3>La Barceloneta</h3>
+                        <p>A cidade tem mais de 4 km de praias.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Projeto DevOps - Divertidamente</p>
+    </footer>
 
 </body>
+
 </html>
