@@ -55,9 +55,26 @@ Projeto desenvolvido em equipe com foco em:
 ```
 web-hands-on/
 ├── index.html
-├── css/
-│   └── style.css
+├── style.css
 ├── img/
+├── enzo-mota/
+│   └── enzo-mota.html
+│   └── enzo-mota.css
+├── giovanna-quirino/
+│   └── giovanna-quirino.html
+│   └── giovanna-quirino.css
+├── matheus-botana/
+│   └── matheus-botana.html
+│   └── matheus-botana.css
+├── matheus-orestes/
+│   └── matheus-orestes.html
+│   └── matheus-orestes.css
+├── rafael-lopes/
+│   └── rafael-lopes.html
+│   └── rafael-lopes.css
+├── yasmin-holando/
+│   └── yasmin-holando.html
+│   └── yasmin-holando.css
 └── README.md
 ```
 
@@ -66,16 +83,14 @@ web-hands-on/
 ```
 main (produção)
   ↓
-develop (desenvolvimento)
-  ↓
-feature/seu-nome (sua branch)
+feature/seu-nome (desenvolvimento)
 ```
 
 **Processo:**
-1. Crie branch a partir de `develop`
+1. Crie branch a partir de `main`
 2. Implementar suas alterações
 3. Abrir Pull Request para revisão
-4. Após aprovação, faça merge para `develop`
+4. Após aprovação, faça merge para `main`
 
 ## 📝 Convenção de Commits
 
